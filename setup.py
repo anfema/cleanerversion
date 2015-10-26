@@ -20,20 +20,21 @@ If you get errors, check the following things:
 - Do you have all the necessary libraries to generate the wanted formats? --> Reduce the set of formats or install libs
 """
 
-setup(name='CleanerVersion',
-      version='1.5.3',
-      description='A versioning solution for relational data models using the Django ORM',
+setup(name='CleanerVersion-anfema',
+      version='1.5.3-anfema',
+      description='A versioning solution for relational data models using the Django ORM. Please use swisscom/cleanerversion, this is just a temporary release with an additional bugfix.',
       long_description='CleanerVersion is a solution that allows you to read and write multiple versions of an entry '
                        'to and from your relational database. It allows to keep track of modifications on an object '
                        'over time, as described by the theory of **Slowly Changing Dimensions** (SCD) **- Type 2**. '
                        ''
                        'CleanerVersion therefore enables a Django-based Datawarehouse, which was the initial idea of '
-                       'this package.',
+                       'this package.'
+                       'Please use swisscom/cleanerversion, this is just a temporary release with an additional bugfix.,'
       author='Manuel Jeckelmann, Jean-Christophe Zulian, Brian King, Andrea Marcacci',
       author_email='engineering.sophia@swisscom.com',
       license='Apache License 2.0',
       packages=find_packages(exclude=['cleanerversion', 'cleanerversion.*']),
-      url='https://github.com/swisscom/cleanerversion',
+      url='https://github.com/anfema/cleanerversion',
       install_requires=['django'],
       package_data={'versions': ['static/js/*.js','templates/versions/*.html']},
       classifiers=[
