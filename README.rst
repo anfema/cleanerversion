@@ -11,6 +11,13 @@ CleanerVersion for Django
 .. image:: https://img.shields.io/pypi/dw/CleanerVersion.svg
    :target: https://pypi.python.org/pypi/CleanerVersion
 
+Temporary release
+=================
+
+This is just a temporary release with an additional bugfix, the changes can be reviewed here: https://github.com/swisscom/cleanerversion/compare/master...anfema:master
+
+All credits belog to @swisscom. Please also use @swisscom/cleanerversion instead for the long term. This package will be removed after the bugfix has been merged and deployed.
+
 Abstract
 ========
 
