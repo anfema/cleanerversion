@@ -29,7 +29,7 @@ setup(name='CleanerVersion-anfema',
                        ''
                        'CleanerVersion therefore enables a Django-based Datawarehouse, which was the initial idea of '
                        'this package.'
-                       'Please use swisscom/cleanerversion, this is just a temporary release with an additional bugfix.,'
+                       'Please use swisscom/cleanerversion, this is just a temporary release with an additional bugfix.',
       author='Manuel Jeckelmann, Jean-Christophe Zulian, Brian King, Andrea Marcacci',
       author_email='engineering.sophia@swisscom.com',
       license='Apache License 2.0',
