@@ -21,7 +21,7 @@ If you get errors, check the following things:
 """
 
 setup(name='CleanerVersion-anfema',
-      version='1.5.3-anfema',
+      version='1.5.3.post1',
       description='A versioning solution for relational data models using the Django ORM. Please use swisscom/cleanerversion, this is just a temporary release with an additional bugfix.',
       long_description='CleanerVersion is a solution that allows you to read and write multiple versions of an entry '
                        'to and from your relational database. It allows to keep track of modifications on an object '
