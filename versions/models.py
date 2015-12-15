@@ -726,6 +726,9 @@ class VersionedManyToManyField(ManyToManyField):
             except KeyError:
                 # The model has not been registered yet, so continue
                 pass
+            except LookupError:
+                # The model has not been registered yet, so continue
+                pass
 
         meta = type('Meta', (object,), {
             # 'unique_together': (from_, to),
