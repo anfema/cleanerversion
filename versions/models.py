@@ -38,7 +38,7 @@ from django.db.models.signals import post_init
 from django.db.models.sql import Query
 from django.db.models.sql.where import ExtraWhere, WhereNode
 from django.utils.functional import cached_property
-from django.utils.timezone import utc
+from django.utils.timezone import utc, is_aware, make_aware
 from django.utils import six
 
 from django.db import models, router
@@ -1269,7 +1269,10 @@ class Versionable(models.Model):
             raise ValueError('This is a historical item and can not be cloned.')
 
         if forced_version_date:
-            if not self.version_start_date <= forced_version_date <= get_utc_now():
+            start_date = self.version_start_date
+            if not is_aware(start_date):
+                start_date = make_aware(start_date, utc)
+            if not start_date <= forced_version_date <= get_utc_now():
                 raise ValueError('The clone date must be between the version start date and now.')
         else:
             forced_version_date = get_utc_now()
